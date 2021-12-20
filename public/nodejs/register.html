@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+<div>
+    <label for="uname">用户名：</label>
+    <input type="text" id="uname" onfocus="show_uname()" onblur="check_uname()" maxlength="8">
+    <span id="uname_msg"></span>
+</div>
+<div>
+    <label for="uemail">邮箱：</label>
+    <input type="uemail" id="uemail" onfocus="show_uemail()" onblur="check_uemail()">
+    <span id="uemail_msg"></span>
+</div>
+<div>
+    <label for="upwd">密码：</label>
+    <input type="password" id="upwd" onfocus="show_upwd()" onblur="check_upwd()" maxlength="16">
+    <span id="upwd_msg"></span>
+</div>
+<button onclick="reg()">注册</button>
+<a href="/nodejs/login">去登录</a>
+</body>
+</html>

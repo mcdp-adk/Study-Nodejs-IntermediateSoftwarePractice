@@ -1,0 +1,25 @@
+{
+  "name": "study-nodejs-intermediatesoftwarepractice",
+  "version": "1.0.0",
+  "description": "使用 Node.js 的中级软件实作大作业",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcdp-adk/Study-Nodejs-IntermediateSoftwarePractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcdp-adk/Study-Nodejs-IntermediateSoftwarePractice/issues"
+  },
+  "homepage": "https://github.com/mcdp-adk/Study-Nodejs-IntermediateSoftwarePractice#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongodb": "^4.2.2"
+  }
+}

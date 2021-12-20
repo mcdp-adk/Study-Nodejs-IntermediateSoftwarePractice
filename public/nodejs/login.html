@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+<div>
+    <label for="uname">用户名：</label>
+    <input type="text" id="uname" onfocus="show_uname()" onblur="check_uname()" maxlength="8">
+    <span id="uname_msg"></span>
+</div>
+<div>
+    <label for="upwd">密码：</label>
+    <input type="password" id="upwd" onfocus="show_upwd()" onblur="check_upwd()" maxlength="16">
+    <span id="upwd_msg"></span>
+</div>
+<button onclick="log()">登录</button>
+<a href="/nodejs/register">去注册</a>
+</body>
+</html>
