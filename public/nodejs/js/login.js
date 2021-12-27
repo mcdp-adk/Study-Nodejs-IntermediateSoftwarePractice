@@ -19,6 +19,7 @@ function check_uname() {
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 let result = xhr.responseText;
+                console.log(JSON.parse(xhr.responseText));
                 if (result === '1') {
                     uname_msg.innerHTML = '✅';
                     uname_check = true;
@@ -57,7 +58,8 @@ function log() {
     check_uname();
     check_upwd();
     if (uname_check && upwd_check) {
-        alert('登陆成功！')
+        alert('登陆成功！');
+        window.location.href = '/nodejs/index';
     } else {
         alert('请检查您的信息');
     }
