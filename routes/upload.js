@@ -45,14 +45,29 @@ router.post('/delete', (req, res) => {
 
 // 加入购物车
 router.post('/toChart', (req, res) => {
-    console.log(req.session);
-    if (!req.session.goods) {
+    if (req.session.goods == null) {
         req.session.goods = [];
         req.session.goods.push(req.body.gname);
-    }else {
+    } else {
         req.session.goods.push(req.body.gname);
     }
-    console.log(req.session);
+    res.send('ok');
+})
+
+// 从购物车中删除
+router.post('/delChart', (req, res) => {
+    console.log(req.body.gname);
+    let newGoods = [];
+    for (let i = 0; i < req.session.goods.length; i++) {
+        if (req.session.goods[i] != req.body.gname) newGoods.push(req.session.goods[i]);
+    }
+    req.session.goods = newGoods;
+    res.send('ok');
+})
+
+// 查询购物车内容
+router.post('/chart', (req, res) => {
+    res.json(req.session);
 })
 
 module.exports = router;

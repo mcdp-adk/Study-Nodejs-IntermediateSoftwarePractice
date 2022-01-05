@@ -59,7 +59,7 @@ function log() {
     check_upwd();
     if (uname_check && upwd_check) {
         alert('登陆成功！');
-        window.location.href = '/nodejs/index';
+        location.href = '/nodejs/index';
     } else {
         alert('请检查您的信息');
     }

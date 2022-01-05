@@ -25,5 +25,8 @@ router.get('/orderManage', (req, res) => {
 router.get('/chart', (req, res) => {
     res.redirect('/nodejs/chart.html');
 })
+router.get('/order', (req, res) => {
+    res.redirect('/nodejs/order.html');
+})
 
 module.exports = router;
