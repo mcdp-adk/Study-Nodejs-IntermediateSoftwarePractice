@@ -76,10 +76,9 @@ function reg() {
                 }
             }
         }
-        xhr.open('post', '/nodejs/user/insert', true);
+        xhr.open('post', '/nodejs/user/insert',true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        let str = 'uname=' + uname.value + '&uemail=' + uemail.value + '&upwd=' + upwd.value;
-        xhr.send(str);
+        xhr.send('uname=' + uname.value + '&uemail=' + uemail.value + '&upwd=' + upwd.value);
     } else {
         alert('请检查注册信息');
     }

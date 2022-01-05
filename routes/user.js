@@ -75,7 +75,7 @@ router.post('/insert', (req, res) => {
 
 // 查询是否已登录
 router.post('/isLog', (req, res) => {
-    res.send(req.session);
+    res.json(req.session);
 })
 
 // 登出
