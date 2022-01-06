@@ -1,11 +1,13 @@
 const express = require('express');
 const userRouter = require('./user');
 const uploadRouter = require('./upload');
+const orderRouter = require('./manage');
 
 let router = express.Router();
 
 router.use('/user', userRouter);
 router.use('/upload', uploadRouter);
+router.use('/manage', orderRouter);
 
 router.get('/index', (req, res) => {
     res.redirect('/nodejs/index.html');
@@ -27,6 +29,9 @@ router.get('/chart', (req, res) => {
 })
 router.get('/order', (req, res) => {
     res.redirect('/nodejs/order.html');
+})
+router.get('/search', (req, res) => {
+    res.redirect('/nodejs/search.html');
 })
 
 module.exports = router;
