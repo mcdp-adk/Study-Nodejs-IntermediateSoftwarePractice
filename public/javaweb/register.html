@@ -2,8 +2,8 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>登录</title>
-    <script src="js/login.js"></script>
+    <title>注册</title>
+    <script src="js/register.js"></script>
 </head>
 <body>
 <div>
@@ -12,12 +12,17 @@
     <span id="uname_msg"></span>
 </div>
 <div>
+    <label for="uemail">邮箱：</label>
+    <input type="uemail" id="uemail" onfocus="show_uemail()" onblur="check_uemail()">
+    <span id="uemail_msg"></span>
+</div>
+<div>
     <label for="upwd">密码：</label>
     <input type="password" id="upwd" onfocus="show_upwd()" onblur="check_upwd()" maxlength="16">
     <span id="upwd_msg"></span>
 </div>
-<button onclick="log()">登录</button>
-<a href="/nodejs/register">去注册</a>
-<a href="/nodejs/index">前往首页</a><br>
+<button onclick="reg()">注册</button>
+<a href="/javaweb/login">去登录</a>
+<a href="/javaweb/index">前往首页</a><br>
 </body>
 </html>

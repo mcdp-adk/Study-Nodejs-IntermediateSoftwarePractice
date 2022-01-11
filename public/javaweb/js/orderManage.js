@@ -65,21 +65,21 @@ window.onload = function () {
             //                 }
             //             }
             //         }
-            //         xhr.open('post', '/nodejs/upload/find', true);
+            //         xhr.open('post', '/javaweb/upload/find', true);
             //         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             //         xhr.send('gname=' + chart[i]);
             //     }
         }
     }
-    xhr.open('post', '/nodejs/manage/find', true);
+    xhr.open('post', '/javaweb/manage/find', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send();
 }
 
 function delGood(e) {
     let xhr = new XMLHttpRequest();
-    xhr.open('post', '/nodejs/upload/delChart');
+    xhr.open('post', '/javaweb/upload/delChart');
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send('gname=' + e.target.parentElement.id);
-    location.href = '/nodejs/chart';
+    location.href = '/javaweb/chart';
 }

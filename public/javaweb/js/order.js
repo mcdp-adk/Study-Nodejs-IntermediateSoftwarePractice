@@ -38,14 +38,14 @@ window.onload = function () {
                         }
                         document.getElementById('count').innerHTML = '总价格为：' + count;
                     }
-                    xhr.open('post', '/nodejs/upload/find', true);
+                    xhr.open('post', '/javaweb/upload/find', true);
                     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                     xhr.send('gname=' + chart[i]);
                 }
             }
         }
     }
-    xhr.open('post', '/nodejs/upload/chart', true);
+    xhr.open('post', '/javaweb/upload/chart', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send();
 }

@@ -10,28 +10,28 @@ router.use('/upload', uploadRouter);
 router.use('/manage', orderRouter);
 
 router.get('/index', (req, res) => {
-    res.redirect('/nodejs/index.html');
+    res.redirect('/javaweb/index.html');
 })
 router.get('/login', (req, res) => {
-    res.redirect('/nodejs/login.html');
+    res.redirect('/javaweb/login.html');
 })
 router.get('/register', (req, res) => {
-    res.redirect('/nodejs/register.html');
+    res.redirect('/javaweb/register.html');
 })
 router.get('/goodsManage', (req, res) => {
-    res.redirect('/nodejs/goodsManage.html');
+    res.redirect('/javaweb/goodsManage.html');
 })
 router.get('/orderManage', (req, res) => {
-    res.redirect('/nodejs/orderManage.html');
+    res.redirect('/javaweb/orderManage.html');
 })
 router.get('/chart', (req, res) => {
-    res.redirect('/nodejs/chart.html');
+    res.redirect('/javaweb/chart.html');
 })
 router.get('/order', (req, res) => {
-    res.redirect('/nodejs/order.html');
+    res.redirect('/javaweb/order.html');
 })
 router.get('/search', (req, res) => {
-    res.redirect('/nodejs/search.html');
+    res.redirect('/javaweb/search.html');
 })
 
 module.exports = router;

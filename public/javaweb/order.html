@@ -2,8 +2,8 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
-    <script src="js/index.js"></script>
+    <title>订单</title>
+    <script src="js/order.js"></script>
     <style>
         #goods > div {
             border-style: solid;
@@ -17,11 +17,9 @@
     </style>
 </head>
 <body>
-<div id="isLog"></div>
-<a href="/nodejs/goodsManage">商品统一管理</a><br>
-<a href="/nodejs/orderManage">后台订单管理</a><br>
-<a href="/nodejs/chart">购物车</a>
-<a href="/nodejs/search">搜索</a>
+<a href="/javaweb/index">返回首页</a><br>
 <div id="goods"></div>
+<p id="count"></p>
+<button onclick="location.href='/javaweb/manage/insert'">提交</button>
 </body>
 </html>

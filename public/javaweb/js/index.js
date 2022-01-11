@@ -9,10 +9,10 @@ window.onload = function () {
                 let a = document.createElement('a');
                 p.innerHTML = result.uname + ' 欢迎登陆!';
                 a.innerHTML = '退出';
-                a.href = '/nodejs/login';
+                a.href = '/javaweb/login';
                 a.onclick = function () {
                     let xhr = new XMLHttpRequest();
-                    xhr.open('get', '/nodejs/user/logout', true);
+                    xhr.open('get', '/javaweb/user/logout', true);
                     xhr.send();
                 }
                 document.getElementById('isLog').appendChild(p);
@@ -22,15 +22,15 @@ window.onload = function () {
                 let a2 = document.createElement('a');
                 a1.innerHTML = '去注册';
                 a2.innerHTML = '去登录';
-                a1.href = '/nodejs/register';
-                a2.href = '/nodejs/login';
+                a1.href = '/javaweb/register';
+                a2.href = '/javaweb/login';
                 document.getElementById('isLog').appendChild(a1);
                 document.getElementById('isLog').appendChild(document.createElement('br'));
                 document.getElementById('isLog').appendChild(a2);
             }
         }
     }
-    xhr.open('post', '/nodejs/user/isLog', true);
+    xhr.open('post', '/javaweb/user/isLog', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send();
 
@@ -63,14 +63,14 @@ window.onload = function () {
             }
         }
     }
-    xhr2.open('post', '/nodejs/upload/find', true);
+    xhr2.open('post', '/javaweb/upload/find', true);
     xhr2.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr2.send();
 }
 
 function toChart(e) {
     let xhr = new XMLHttpRequest();
-    xhr.open('post','/nodejs/upload/toChart');
+    xhr.open('post','/javaweb/upload/toChart');
     xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
     xhr.send('gname='+e.target.parentElement.id);
 }

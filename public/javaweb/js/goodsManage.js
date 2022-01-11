@@ -28,17 +28,17 @@ window.onload = function () {
             }
         }
     }
-    xhr.open('post', '/nodejs/upload/find', true);
+    xhr.open('post', '/javaweb/upload/find', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send();
 }
 
 function delGood(e) {
     let xhr = new XMLHttpRequest();
-    xhr.open('post', '/nodejs/upload/delete');
+    xhr.open('post', '/javaweb/upload/delete');
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send('gname=' + e.target.parentElement.id);
-    location.href = '/nodejs/goodsManage';
+    location.href = '/javaweb/goodsManage';
 }
 
 function up_file() {
@@ -56,13 +56,13 @@ function up_file() {
                 let result = xhr.responseText;
                 if (result === '1') {
                     alert('上传成功！');
-                    location.href = '/nodejs/goodsManage';
+                    location.href = '/javaweb/goodsManage';
                 } else if (result === '0') {
                     alert('上传失败');
                 }
             }
         }
-        xhr.open('post', '/nodejs/upload/insert', true);
+        xhr.open('post', '/javaweb/upload/insert', true);
         xhr.send(form);
     })
     // let img = document.getElementById('img').files[0]
@@ -76,7 +76,7 @@ function up_file() {
     //
     //     }
     // }
-    // xhr.open('post', '/nodejs/upload', true);
+    // xhr.open('post', '/javaweb/upload', true);
     // xhr.send(form);
 }
 

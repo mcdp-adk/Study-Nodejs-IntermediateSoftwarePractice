@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
-const nodejsRouter = require('./routes/nodejs');
+const javawebRouter = require('./routes/javaweb');
 
 let app = express();
 
@@ -22,4 +22,4 @@ app.get('/', (req, res) => {
     res.redirect('/index.html');
 })
 
-app.use('/nodejs', nodejsRouter);
+app.use('/javaweb', javawebRouter);

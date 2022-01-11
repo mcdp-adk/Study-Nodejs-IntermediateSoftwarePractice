@@ -28,14 +28,14 @@ function onSearch() {
             }
         }
     }
-    xhr.open('post', '/nodejs/upload/find', true);
+    xhr.open('post', '/javaweb/upload/find', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send('gname=' + gname.value);
 }
 
 function toChart(e) {
     let xhr = new XMLHttpRequest();
-    xhr.open('post','/nodejs/upload/toChart');
+    xhr.open('post','/javaweb/upload/toChart');
     xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
     xhr.send('gname='+e.target.parentElement.id);
 }

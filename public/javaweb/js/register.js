@@ -33,7 +33,7 @@ function check_uname() {
                 }
             }
         }
-        xhr.open('post', '/nodejs/user/uname', true);
+        xhr.open('post', '/javaweb/user/uname', true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send('uname=' + uname.value);
     }
@@ -70,13 +70,13 @@ function reg() {
                 let result = xhr.responseText;
                 if (result === '1') {
                     alert('注册成功！');
-                    location.href = '/nodejs/login';
+                    location.href = '/javaweb/login';
                 } else if (result === '0') {
                     alert('注册失败');
                 }
             }
         }
-        xhr.open('post', '/nodejs/user/insert',true);
+        xhr.open('post', '/javaweb/user/insert',true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send('uname=' + uname.value + '&uemail=' + uemail.value + '&upwd=' + upwd.value);
     } else {

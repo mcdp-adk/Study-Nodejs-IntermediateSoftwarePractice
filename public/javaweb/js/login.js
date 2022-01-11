@@ -29,7 +29,7 @@ function check_uname() {
                 }
             }
         }
-        xhr.open('post', '/nodejs/user/uname', true);
+        xhr.open('post', '/javaweb/user/uname', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.send('uname=' + uname.value);
     }
@@ -49,7 +49,7 @@ function check_upwd() {
             }
         }
     }
-    xhr.open('post', '/nodejs/user/upwd', true);
+    xhr.open('post', '/javaweb/user/upwd', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send('uname=' + uname.value + '&upwd=' + upwd.value);
 }
@@ -59,7 +59,7 @@ function log() {
     check_upwd();
     if (uname_check && upwd_check) {
         alert('登陆成功！');
-        location.href = '/nodejs/index';
+        location.href = '/javaweb/index';
     } else {
         alert('请检查您的信息');
     }

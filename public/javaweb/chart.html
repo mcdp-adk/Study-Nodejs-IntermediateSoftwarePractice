@@ -2,10 +2,10 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>后台订单管理</title>
-    <script src="js/orderManage.js"></script>
+    <title>购物车</title>
+    <script src="js/chart.js"></script>
     <style>
-        #orders > div {
+        #goods > div {
             border-style: solid;
             border-color: red;
         }
@@ -17,7 +17,8 @@
     </style>
 </head>
 <body>
-<a href="/nodejs/index">返回首页</a><br>
-<div id="orders"></div>
+<a href="/javaweb/index">返回首页</a><br>
+<div id="goods"></div>
+<button onclick="location.href='/javaweb/order'">去结算</button>
 </body>
 </html>

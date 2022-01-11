@@ -7,7 +7,7 @@ let router = express.Router();
 // 将 session 中的购物车存入数据库
 router.get('/insert', (req, res) => {
     if (!req.session.uname) {
-        res.redirect('/nodejs/login');
+        res.redirect('/javaweb/login');
     } else {
         let obj = {};
         obj.uname = req.session.uname;
@@ -21,7 +21,7 @@ router.get('/insert', (req, res) => {
             })
         })
         req.session.goods = [];
-        res.redirect('/nodejs/orderManage');
+        res.redirect('/javaweb/orderManage');
     }
 })
 

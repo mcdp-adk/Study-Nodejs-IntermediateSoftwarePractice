@@ -1,5 +1,5 @@
 {
-  "name": "study-nodejs-intermediatesoftwarepractice",
+  "name": "study-javaweb-intermediatesoftwarepractice",
   "version": "1.0.0",
   "description": "使用 Node.js 的中级软件实作大作业",
   "main": "app.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcdp-adk/Study-Nodejs-IntermediateSoftwarePractice.git"
+    "url": "git+https://github.com/mcdp-adk/Study-javaweb-IntermediateSoftwarePractice.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mcdp-adk/Study-Nodejs-IntermediateSoftwarePractice/issues"
+    "url": "https://github.com/mcdp-adk/Study-javaweb-IntermediateSoftwarePractice/issues"
   },
-  "homepage": "https://github.com/mcdp-adk/Study-Nodejs-IntermediateSoftwarePractice#readme",
+  "homepage": "https://github.com/mcdp-adk/Study-javaweb-IntermediateSoftwarePractice#readme",
   "dependencies": {
     "body-parser": "^1.19.1",
     "connect-multiparty": "^2.2.0",
